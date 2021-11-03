@@ -1,27 +1,39 @@
 document.addEventListener('keypress', keyIsPressed);
 
+//event function to check when a key is pressed and play audio if it is a piano key
 function keyIsPressed(event) {
+
+    let sound = document.createElement('audio');
+
+    //different code cases for the piano keys
     switch(event.code) {
         case 'KeyA':
-            console.log(`The '${event.key}' key was pressed.`);
+            sound.src = 'audio/A.mp3';
+            sound.play();
             break;
         case 'KeyS':
-            console.log(`The '${event.key}' key was pressed.`);
+            sound.src = 'audio/S.mp3';
+            sound.play();
             break;
         case 'KeyD':
-            console.log(`The '${event.key}' key was pressed.`);
+            sound.src = 'audio/D.mp3';
+            sound.play();
             break;
         case 'KeyF':
-            console.log(`The '${event.key}' key was pressed.`);
+            sound.src = 'audio/F.mp3';
+            sound.play();
             break;
         case 'KeyG':
-            console.log(`The '${event.key}' key was pressed.`);
+            sound.src = 'audio/G.mp3';
+            sound.play();
             break;
         case 'KeyH':
-            console.log(`The '${event.key}' key was pressed.`);
+            sound.src = 'audio/H.mp3';
+            sound.play();
             break;
         case 'KeyJ':
-            console.log(`The '${event.key}' key was pressed.`);
+            sound.src = 'audio/J.mp3';
+            sound.play();
             break;
         default:
             console.error(`The '${event.key}' key is not an option.`);
