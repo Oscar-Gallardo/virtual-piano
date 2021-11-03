@@ -9,7 +9,13 @@ body {
     height: 100vh;
     justify-content: center;
 }
-kbd {
+.white-keys {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.white-keys kbd {
     align-items: center;
     background-color: #fff;
     border: 2px solid #000;
@@ -17,4 +23,32 @@ kbd {
     height: 300px;
     justify-content: center;
     width: 100px;
+}
+.black-keys {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    transform: translateY(-75px);
+}
+.black-keys kbd {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    border: 2px solid #000;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    width: 50px;
+    height: 150px;
+}
+.black-keys kbd:nth-child(2) {
+    margin: 0 55px 0 50px;
+}
+.black-keys kbd:nth-child(3) {
+    margin-left: 100px;
+}
+.black-keys kbd:nth-child(4) {
+    margin: 0 50px;
 }
