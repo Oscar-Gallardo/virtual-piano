@@ -35,6 +35,26 @@ function keyIsPressed(event) {
             sound.src = 'audio/J.mp3';
             sound.play();
             break;
+        case 'KeyW':
+            sound.src = 'audio/W.mp3';
+            sound.play();
+            break;
+        case 'KeyE':
+            sound.src = 'audio/E.mp3';
+            sound.play();
+            break;
+        case 'KeyT':
+            sound.src = 'audio/T.mp3';
+            sound.play();
+            break;
+        case 'KeyY':
+            sound.src = 'audio/Y.mp3';
+            sound.play();
+            break;
+        case 'KeyU':
+            sound.src = 'audio/U.mp3';
+            sound.play();
+            break;
         default:
             console.error(`The '${event.key}' key is not an option.`);
             break;
